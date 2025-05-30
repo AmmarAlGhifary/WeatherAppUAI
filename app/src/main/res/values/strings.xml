@@ -11,4 +11,9 @@
 
     <string name="forecast_weather_icon">Forecast weather icon</string>
     <string name="temp_max_min_format">%1$.0f°/%2$.0f°</string>
+    <string name="temperature_celsius_format">%.0f°C</string>
+    <string name="feels_like_format">Feels like: %.0f°C</string>
+    <string name="percentage_format">%d%%</string>
+    <string name="wind_speed_kph_format">%.1f km/h</string>
+    <string name="city_country_format">%1$s, %2$s</string>
 </resources>

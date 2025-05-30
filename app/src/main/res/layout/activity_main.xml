@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/backgroundColor"
+    android:theme="@style/Theme.WeatherAppUAI"
     tools:context=".ui.main.view.MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -86,10 +86,11 @@
 
                     <ImageView
                         android:id="@+id/ivWeatherIcon"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="20dp"
+                        android:layout_marginTop="5dp"
                         android:contentDescription="@string/weather_condition_icon"
-                        app:layout_constraintBottom_toTopOf="@+id/tvTemperature"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:srcCompat="@drawable/ic_weather_placeholder" />
