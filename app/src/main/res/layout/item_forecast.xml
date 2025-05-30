@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="130dp"
+    android:layout_height="wrap_content"
+    style="?attr/materialCardViewStyle"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvForecastDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="?attr/colorOnSurface"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Mon, May 27" />
+
+        <ImageView
+            android:id="@+id/ivForecastIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/forecast_weather_icon"
+            app:layout_constraintTop_toBottomOf="@id/tvForecastDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:srcCompat="@drawable/ic_weather_placeholder" />
+
+        <TextView
+            android:id="@+id/tvForecastTempMaxMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:textColor="?attr/colorPrimary"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/ivForecastIcon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="30°/25°" />
+
+        <TextView
+            android:id="@+id/tvForecastCondition"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceCaption"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:gravity="center_horizontal"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/tvForecastTempMaxMin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="Sunny spells" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

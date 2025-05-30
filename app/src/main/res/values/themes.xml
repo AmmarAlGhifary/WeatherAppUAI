@@ -1,0 +1,79 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.WeatherAppUAI" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_primary</item>
+        <item name="colorPrimaryVariant">@color/purple_primary_dark</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+
+        <item name="colorSecondary">@color/grey_200</item>
+        <item name="colorSecondaryVariant">@color/grey_500</item>
+        <item name="colorOnSecondary">@color/grey_900</item>
+
+        <item name="android:colorBackground">@color/color_background</item>
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorOnBackground">@color/color_on_surface</item>
+        <item name="colorOnSurface">@color/color_on_surface</item>
+        <item name="colorError">@android:color/holo_red_dark</item>
+        <item name="colorOnError">@color/white</item>
+
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+
+        <item name="colorPrimaryContainer">@color/purple_primary_light</item>
+        <item name="colorOnPrimaryContainer">@color/grey_900</item>
+        <item name="colorSecondaryContainer">@color/grey_200</item>
+        <item name="colorOnSecondaryContainer">@color/grey_900</item>
+        <item name="colorSurfaceVariant">@color/grey_50</item>
+        <item name="colorOnSurfaceVariant">@color/grey_800</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.App.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.App.LargeComponent</item>
+
+        <item name="materialCardViewStyle">@style/Widget.App.CardView</item>
+
+        <item name="materialButtonStyle">@style/Widget.App.Button</item>
+        <item name="materialIconButtonFilledStyle">@style/Widget.App.IconButton.Filled</item>
+
+        <item name="android:windowSplashScreenBackground" tools:ignore="NewApi">@color/purple_primary</item>
+        <item name="android:windowSplashScreenAnimatedIcon" tools:ignore="NewApi">@drawable/ic_logo</item>
+        <item name="android:windowSplashScreenAnimationDuration" tools:ignore="NewApi">1000</item>
+        <item name="postSplashScreenTheme">@style/Theme.WeatherAppUAI</item>
+
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="ShapeAppearance.App.LargeComponent" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="Widget.App.CardView" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardElevation">4dp</item>
+        <item name="cardBackgroundColor">@color/color_surface</item>
+    </style>
+
+    <style name="Widget.App.Button" parent="Widget.Material3.Button">
+        <item name="android:textAppearance">@style/TextAppearance.Material3.LabelLarge</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+    </style>
+
+    <style name="Widget.App.IconButton.Filled" parent="Widget.Material3.Button.IconButton.Filled">
+        <item name="tint">@color/color_on_primary</item> <!-- Icon color on filled button -->
+        <item name="android:backgroundTint">@color/purple_primary</item>
+    </style>
+
+</resources>
