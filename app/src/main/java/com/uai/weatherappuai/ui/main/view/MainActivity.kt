@@ -1,10 +1,8 @@
-package com.uai.weatherappuai.util.main
+package com.uai.weatherappuai.ui.main.view
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.uai.weatherappuai.R
 
 class MainActivity : AppCompatActivity() {
