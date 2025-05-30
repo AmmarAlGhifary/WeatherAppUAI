@@ -10,5 +10,5 @@
     <string name="retry">Retry</string>
 
     <string name="forecast_weather_icon">Forecast weather icon</string>
-
+    <string name="temp_max_min_format">%1$.0f°/%2$.0f°</string>
 </resources>
